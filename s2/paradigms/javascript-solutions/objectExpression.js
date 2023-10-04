@@ -338,19 +338,3 @@ function BracketError(token, finishPos) {
     UnexpectedToken.call(this, "'" + token + "' that finishes on pos " + finishPos + ", bracket expected");
     this.message = "'" + token + "' that finishes on pos " + finishPos + ", bracket expected";
 }
-
-/*
-size = 6
-                  build [-10=v, -9=y, 1=xvlxp, 2=dm, 3=wbw, 4=i]
-                map_put (map, 3, a, V)
-                map_put (map, -10, b, V)
-        map_putIfAbsent (map, 3, o, V)
-        map_putIfAbsent (map, -3, a, V)
-        map_putIfAbsent (map, -3, a, V)
-        map_putIfAbsent (map, 2, febqxe, V)
-             map_remove (map, -10, V)
-
-Exception in thread "main" java.lang.AssertionError: Exactly one solution expected for V in map_get(tree23([tree23([tree23([],[-9],y)],[-9],_25217),tree23([tree23([],[-3],a),tree23([],[1],xvlxp),tree23([],[2],dm)],[-3,1,2],_25206),tree23([tree23([],[3],a),tree23([],[4],i)],[3,4],_25207)],[-9,2,4],_25226),-9,V)
-  found: 0 []
-
- */
