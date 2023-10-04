@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * @author Georgiy Korneev (kgeorgiy@kgeorgiy.info)
- */
+
 public class BaseParser {
     protected static final char END = '\0';
     private final CharSource source;
