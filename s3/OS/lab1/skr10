@@ -1,0 +1,3 @@
+#!/bin/bash
+man bash | tr -s '[[:punct:][:space:]]' '\n' | grep -E -o '^[[:alnum:]]{4,}$' | sort | uniq -c | sort -k 1 -n -r | head -3
+

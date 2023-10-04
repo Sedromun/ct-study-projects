@@ -1,0 +1,3 @@
+#!/bin/bash
+awk '($1 == "[" && $3 == "(WW)") || $2 == "(WW)" {gsub(/\(WW\)/,"Warning:"); print}' X.log > full.log
+awk '($1 == "[" && $3 == "(II)") || $2 == "(II)" {gsub(/\(II\)/,"Information:"); print}' X.log >> full.log

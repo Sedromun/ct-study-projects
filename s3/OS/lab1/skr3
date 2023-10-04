@@ -1,0 +1,16 @@
+#!/bin/bash
+while [[ true ]]
+do
+	read inp
+	if [[ $inp == "1" ]] 
+		then nano
+	elif [[ $inp == "2" ]] 
+		then vi
+	elif [[ $inp == "3" ]] 
+		then links
+	elif [[ $inp == "4" ]]
+		then break
+	else 
+		echo "write number from 1 to 4"
+	fi
+done

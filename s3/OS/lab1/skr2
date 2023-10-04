@@ -1,0 +1,9 @@
+#!/bin/bash
+read -r inp
+string="${inp}"
+while [[ $inp != 'q' ]] 
+do  
+	read -r inp
+	string+="${inp}"
+done
+echo "$string"
