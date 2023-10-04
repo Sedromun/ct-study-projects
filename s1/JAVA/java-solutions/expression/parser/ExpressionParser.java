@@ -4,9 +4,6 @@ import expression.*;
 
 import java.util.List;
 
-/**
- * @author Georgiy Korneev (kgeorgiy@kgeorgiy.info)
- */
 public final class ExpressionParser implements TripleParser {
     @Override
     public TripleExpression parse(final String source) {
