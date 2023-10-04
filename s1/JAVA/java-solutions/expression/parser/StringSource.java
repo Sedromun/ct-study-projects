@@ -1,8 +1,6 @@
 package expression.parser;
 
-/**
- * @author Georgiy Korneev (kgeorgiy@kgeorgiy.info)
- */
+
 public class StringSource implements CharSource {
     private final String data;
     private int pos;
